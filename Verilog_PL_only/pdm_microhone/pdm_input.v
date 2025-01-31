@@ -70,8 +70,8 @@ module pdm_input
         amplitude         <= sample_counter2 + M_DATA;
         amplitude_valid   <= 1;
         sample_counter2 <= 0;
-      end else if (counter1 > 100) begin
-        sample_counter1 <= sample_counter1 + M_DATA;
+      end else if (counter2 > 100) begin
+        sample_counter2 <= sample_counter2+ M_DATA;
       end
     end
   end // always @ (posedge clk)
